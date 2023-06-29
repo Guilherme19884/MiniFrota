@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {}
+    "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {}
   },
   "projects": {
-    "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {
+    "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
+        "projectUniqueName": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
         "projectName": "MiniFrota",
-        "projectPath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
+        "projectPath": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
         "packagesPath": "C:\\Users\\guiga\\.nuget\\packages\\",
-        "outputPath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\obj\\",
+        "outputPath": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.8, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
