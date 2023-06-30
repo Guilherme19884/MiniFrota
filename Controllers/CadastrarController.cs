@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using MiniFrota.Models;
 
 namespace MiniFrota.Controllers
 {
@@ -16,9 +17,10 @@ namespace MiniFrota.Controllers
             _logger = logger;
         }
 
-        public IActionResult Cadastrar()
+        [HttpPost]
+        public IActionResult Cadastrar(Veiculo veiculo)
         {
-            return View();
+            return View(Veiculo veiculo);
         }
     }
 
