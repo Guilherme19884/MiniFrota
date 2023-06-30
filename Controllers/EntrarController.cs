@@ -16,9 +16,6 @@ namespace MiniFrota.Controllers
             _logger = logger;
         }
 
-        public IActionResult Entrar()
-        {
-            return View();
-        }
+       
     }
 }
