@@ -16,13 +16,5 @@ namespace MiniFrota.Controllers
         {
             _logger = logger;
         }
-
-        [HttpPost]
-        public IActionResult Cadastrar(Veiculo veiculo)
-        {
-            return View(Veiculo veiculo);
-        }
     }
-
-    
 }

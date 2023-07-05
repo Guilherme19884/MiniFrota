@@ -8,25 +8,25 @@ using MiniFrota.Context;
 using MiniFrota.Models;
 using MiniFrota.Repository;
 
-namespace MiniFrota.Controllers
-{
-    public class EntrarController : Controller
-    {
+// namespace MiniFrota.Controllers
+// {
+//     public class EntrarController : Controller
+//     {
         
-       public class EntrarController : Controller
-    {
-        private readonly ILogger<EntrarController> _logger;
-        private readonly IVeiculoRepository _veiculoRepository;
+//        public class EntrarController : Controller
+//     {
+//         private readonly ILogger<EntrarController> _logger;
+//         private readonly IVeiculoRepository _veiculoRepository;
 
-        public EntrarController(ILogger<EntrarController> logger, IVeiculoRepository veiculoRepository)
-        {
-            _logger = logger;
-            _veiculoRepository = veiculoRepository;
-        }
+//         public EntrarController(ILogger<EntrarController> logger, IVeiculoRepository veiculoRepository)
+//         {
+//             _logger = logger;
+//             _veiculoRepository = veiculoRepository;
+//         }
 
-        // Restante do código do controlador
-        // ...
-    }
+//         // Restante do código do controlador
+//         // ...
+//     }
 
-    }
-}
+//     }
+// }

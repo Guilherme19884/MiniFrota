@@ -1,0 +1,75 @@
+﻿@model MiniFrota.Models.Veiculo;
+@{
+    ViewData["Title"] = "Entrar";
+}
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menu Lateral -->
+            <div class="col-md-2 bg-dark text-white" style="border-radius: 5px;">
+                <h3 class="text-center mt-3" >Menu </h3>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Veículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Multa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Motorista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Administrador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Combustível</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Emplacamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Seguro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Sinistro</a>
+                    </li>
+                </ul>
+        </div>
+            
+            <!-- Conteúdo Principal -->
+            <div class="col-md-9">
+                <h1>Veículo</h1>
+                <form>
+  <div class="mb-3 col-9">
+    <label for="exampleInputText1" class="form-label">Modelo</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label for="exampleInputText1" class="form-label">Marca</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label for="exampleInputText1" class="form-label">Placa</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label for="exampleInputText1" class="form-label">Motorista</label>
+    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Veículo é particular?</label>
+  </div>
+
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="CadastrarVeiculo">Cadastrar</button>
+  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
+  <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
+  <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
+
+  
+</form>
+                <!-- Aqui você pode adicionar o conteúdo específico de cada item do menu -->
+            </div>
+        </div>
+    </div>
+    
