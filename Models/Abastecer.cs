@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MiniFrota.Models
 {
-    public class Combustivel
+    public class Abastecer
     {
         [Key]
-        public int CombustivelId { get; set; }
+        public int AbastecerId { get; set; }
         public string TipoCombustivel { get; set; }
         public decimal ValorCombustivel { get; set; }
         public DateTime DataAbastecimento { get; set; }

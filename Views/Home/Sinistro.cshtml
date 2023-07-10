@@ -1,6 +1,6 @@
 ﻿@model MiniFrota.Models.Veiculo;
 @{
-    ViewData["Title"] = "Veículo";
+    ViewData["Title"] = "Sinistro";
 }
 
     <div class="container-fluid">
@@ -38,28 +38,17 @@
             
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
-                <h1>Veículo</h1>
+                <h1>Sinistro</h1>
                 <form>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Modelo</label>
+    <label for="exampleInputText1" class="form-label">Data do sinistro</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Marca</label>
+    <label for="exampleInputText1" class="form-label">Descricao</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Placa</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Motorista</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Veículo é particular?</label>
-  </div>
+  
 
   <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="CadastrarVeiculo">Cadastrar</button>
   <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>

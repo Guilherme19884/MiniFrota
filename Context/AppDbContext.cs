@@ -18,7 +18,7 @@ namespace MiniFrota.Context
         public DbSet<Manutencao> Manutencoes { get; set; }
         public DbSet<Multa> Multas { get; set; }
         public DbSet<Seguro> Seguros { get; set; }
-        public DbSet<Combustivel> Combustiveis { get; set; }
+        public DbSet<Abastecer> Combustiveis { get; set; }
         public DbSet<Emplacamento> Emplacamentos { get; set; }
         public DbSet<Sinistro>Sinistros { get; set; }
         public DbSet<Dashboard> Dashboards { get; set; }
