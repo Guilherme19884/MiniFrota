@@ -9,7 +9,14 @@ namespace MiniFrota.Controllers
 {
     public class DashboardController : Controller
     {
-         public IActionResult Dashboard()
+        private readonly ILogger<DashboardController> _logger;
+
+        public DashboardController(ILogger<DashboardController> logger)
+        {
+            _logger = logger;
+        }
+        
+         public IActionResult Index()
         {
             var dashboard = new Dashboard
             {
