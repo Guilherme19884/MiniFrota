@@ -48,8 +48,6 @@ namespace MiniFrota.Controllers
             if (veiculo == null)
             {
                 return NotFound();
-            }else if(veiculo != veiculo){
-                return NotFound();
             }
 
             return View(veiculo);

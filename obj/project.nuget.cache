@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C7v/GGJbr4qw81XSnqbHSbBhoBaLNi1DoL253N6555mX19MQwErk7ZJMQeALbUJ23qKAi+0kvaiyoXdj3Sjt1A==",
+  "dgSpecHash": "1ohcjoo5V9KMZkWydgDEuaWNGlf9iIIqDmwM4uEwUQLDAuYxwgjosmPLBogYUC0QSKOfUVeazikGQ4LIsiIhkQ==",
   "success": true,
-  "projectFilePath": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
+  "projectFilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guiga\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\guiga\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
