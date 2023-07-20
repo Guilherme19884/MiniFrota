@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniFrota
 build_property.RootNamespace = MiniFrota
-build_property.ProjectDir = d:\MeusProjetos\Projeto-FrotaVeiculos\MiniFrota\
+build_property.ProjectDir = D:\MeusProjetos\Projeto-FrotaVeiculos\MiniFrota\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\MeusProjetos\Projeto-FrotaVeiculos\MiniFrota
+build_property.MSBuildProjectDirectory = D:\MeusProjetos\Projeto-FrotaVeiculos\MiniFrota
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Abastecer/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Abastecer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJhc3RlY2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Dashboard/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Emplacamento/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Emplacamento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGFjYW1lbnRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Entrar.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Entrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbnRyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Privacy.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Manutencao/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Manutencao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNhb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Motorista/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Motorista/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3RhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Multa/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Multa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Seguro/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Seguro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VndXJvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/Error.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Sinistro/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Sinistro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Veiculo/Index.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Veiculo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVpY3Vsb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/_ViewImports.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/_ViewStart.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/_Layout.cshtml]
+[D:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sef7cdf885
