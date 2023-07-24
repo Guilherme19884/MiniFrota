@@ -10,19 +10,24 @@ namespace MiniFrota.Models
     public class Veiculo
     {
         [Key]
-         [Required(ErrorMessage = "O campo Placa é obrigatório.")]
+        [Required(ErrorMessage = "O campo Placa é obrigatório.")]
+        [Display(Name = "Placa")]
         public string Placa { get; set; }
 
-         [Required(ErrorMessage = "O campo Cor é obrigatório.")]
+
+        [Required(ErrorMessage = "O campo Cor é obrigatório.")]
+        [Display(Name = "Cor")]
         public string Cor { get; set; }
 
-         [Required(ErrorMessage = "O campo Marca é obrigatório.")]
+
+        [Required(ErrorMessage = "O campo Marca é obrigatório.")]
+        [Display(Name = "Marca")]
         public string Marca { get; set; }
 
-         [Required(ErrorMessage = "O campo Modelo é obrigatório.")]
+        [Required(ErrorMessage = "O campo Modelo é obrigatório.")]
+        [Display(Name = "Modelo")]
         public string Modelo { get; set; }
-        public bool Locado { get; set; }
-        public string NomeLocadora { get; set; }
+        
         public Manutencao Manut { get; set; }
 
         public ICollection<Motorista> Motoristas { get; set; }

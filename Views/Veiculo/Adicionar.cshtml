@@ -39,7 +39,7 @@
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
                 <h1>Veículo</h1>
-<form >
+                <form>
   <div class="mb-3 col-9">
     <label for="exampleInputText1" class="form-label">Modelo</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
@@ -61,8 +61,8 @@
     <label class="form-check-label" for="exampleCheck1">Veículo é particular?</label>
   </div>
 
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Adicionar">Cadastrar</button>
-  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" >Listar</button>
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Adicionar">Cadastrar</button>
+  <button type="submit" class="btn btn-info" style="margin: 2.8rem;"asp-action="Listar" asp-route-id="veiculo.placa" >Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="veiculo.placa" >Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="veiculo.placa" >Deletar</button>
 

@@ -31,7 +31,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Veiculos.Add(veiculo);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
             
             return View(veiculo);
@@ -60,7 +60,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Veiculos.Update(veiculo);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(veiculo);

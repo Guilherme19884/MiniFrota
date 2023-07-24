@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MiniFrota.Context;
@@ -24,14 +25,15 @@ namespace MiniFrota.Controllers
             return View();
         }
 
-                [HttpPost]
+        [HttpPost]
         public IActionResult Adicionar(Motorista motorista)
         {
             if (ModelState.IsValid)
             {
                 _context.Motoristas.Add(motorista);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                TempData["Mensagem"] ="MOTORISTA CADASTRADO COM SUCESSO";
+                return RedirectToAction(nameof(Index));
             }
             
             return View(motorista);
@@ -61,7 +63,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Motoristas.Update(motorista);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(motorista);
@@ -78,7 +80,7 @@ namespace MiniFrota.Controllers
             _context.Motoristas.Remove(motorista);
             _context.SaveChanges();
 
-            return RedirectToAction("Listar");
+            return RedirectToAction(nameof(Index));
         }
     }
 }

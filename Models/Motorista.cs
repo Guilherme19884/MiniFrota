@@ -10,7 +10,14 @@ namespace MiniFrota.Models
     {
         [Key]
         public int MotoristaId { get; set; }
+
+        [Required(ErrorMessage = "Informe sua CNH.")]
+        [Display(Name = "CNH")]
         public long NumeroCnh { get; set; }
+
+        [Required(ErrorMessage = "Informe o salário do Motorista.")]
+        [Display(Name = "Salario")]
+        [Range(1.800,99,ErrorMessage ="O salário deve estar entre 1.199,99 e 5.999,99")]
         public decimal Salario { get; set; }
     }
 }

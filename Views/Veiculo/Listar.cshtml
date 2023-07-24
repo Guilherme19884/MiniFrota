@@ -1,38 +1,49 @@
-@model MiniFrota.Models.Veiculo;
+@model IEnumerable<MiniFrota.Models.Veiculo>;
 @{
-    ViewData["Title"] = "Veículo";
+    ViewData["Title"] = "Lista de Veículos";
 }
 
 <table class="table table-success table-hover">
   <thead>
     <tr>
-      <th scope="col">Moldelo</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Placa</th>
-      <th scope="col">Motorista</th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.Modelo)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.Marca)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.Placa)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.Motoristas)
+      </th>
     </tr>
   </thead>
   <tbody class="table table-success table-hover">
-     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Otto</td>
-      @* <td>@mdo</td> *@
-     </tr>
-     <tr>
-      <th>1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Otto</td>
-      @* <td>@mdo</td> *@
-     </tr>
-     <tr>
-      <th>1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Otto</td>
-      @* <td>@mdo</td> *@
-    </tr>
-    </tbody>
+
+    @foreach (var item in Model)
+    {
+      <tr>
+        <th scope="row">
+          @Html.DisplayFor(model => item.Modelo)
+        </th>
+        <td>
+          @Html.DisplayFor(model => item.Marca)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.Placa)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.Motoristas)
+        </td>
+        <td>
+          <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="veiculo.placa" >Alterar</button>
+        </td>
+        <td>
+          <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="veiculo.placa" >Deletar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
 </table>

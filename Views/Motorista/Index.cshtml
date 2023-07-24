@@ -1,18 +1,18 @@
-﻿@model MiniFrota.Models.Veiculo;
+﻿@model MiniFrota.Models.Motorista
 @{
     ViewData["Title"] = "Motorista";
 }
 
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Menu Lateral -->
-            <div class="col-md-2 bg-dark text-white" style="border-radius: 5px;">
-                <h3 class="text-center mt-3" >Menu </h3>
-                <ul class="nav flex-column mt-4">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-controller="Veiculo" asp-action="Index">Veículo</a>
-                    </li>
-                    <li class="nav-item">
+<div class="container-fluid">
+    <div class="row">
+        <!-- Menu Lateral -->
+        <div class="col-md-2 bg-dark text-white" style="border-radius: 5px;">
+            <h3 class="text-center mt-3">Menu</h3>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-controller="Veiculo" asp-action="Index">Veículo</a>
+                </li>
+                   <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Multa" asp-action="Index">Multa</a>
                     </li>
                     <li class="nav-item">
@@ -33,43 +33,39 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Sinistro" asp-action="Index">Sinistro</a>
                     </li>
-                </ul>
+            </ul>
         </div>
-            
-            <!-- Conteúdo Principal -->
-            <div class="col-md-9">
-                <h1>Motorista</h1>
-                <form>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data inicio uso</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data Fim do uso</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Nome do Motorista</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Nº CNH</label>
-    <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Placa do veiculo</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
 
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="CadastrarVeiculo">Cadastrar</button>
-  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
-  <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
-  <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
+        <!-- Conteúdo Principal -->
+        <div class="col-md-9">
+            <h1>Motorista</h1>
+            <form asp-controller="Motorista" asp-action="Adicionar" method="post">
+                <div class="mb-3 col-9">
+                    <label asp-for="DataInicioUso" class="form-label">Data inicio uso</label>
+                    <input asp-for="DataInicioUso" type="text" class="form-control" id="DataInicioUso" aria-describedby="textHelp">
+                </div>
+                <div class="mb-3 col-9">
+                    <label asp-for="DataFimUso" class="form-label">Data Fim do uso</label>
+                    <input asp-for="DataFimUso" type="text" class="form-control" id="DataFimUso" aria-describedby="textHelp">
+                </div>
+                <div class="mb-3 col-9">
+                    <label asp-for="Nome" class="form-label">Nome do Motorista</label>
+                    <input asp-for="Nome" type="text" class="form-control" id="Nome" aria-describedby="textHelp">
+                </div>
+                <div class="mb-3 col-9">
+                    <label asp-for="NumeroCnh" class="form-label">Nº CNH</label>
+                    <input asp-for="NumeroCnh" type="number" class="form-control" id="NumeroCnh" aria-describedby="textHelp">
+                </div>
+                <div class="mb-3 col-9">
+                    <label asp-for="placa" class="form-label">Placa do veiculo</label>
+                    <input asp-for="placa" type="text" class="form-control" id="placa" aria-describedby="textHelp">
+                </div>
 
-  
-</form>
-                <!-- Aqui você pode adicionar o conteúdo específico de cada item do menu -->
-            </div>
+                <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;">Cadastrar</button>
+                <button type="submit" class="btn btn-info" style="margin: 2.8rem;">Listar</button>
+                <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
+                <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
+            </form>
         </div>
     </div>
-    
+</div>
