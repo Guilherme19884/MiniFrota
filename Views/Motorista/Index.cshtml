@@ -35,19 +35,11 @@
                     </li>
             </ul>
         </div>
-
+       
         <!-- Conteúdo Principal -->
         <div class="col-md-9">
             <h1>Motorista</h1>
-            <form asp-controller="Motorista" asp-action="Adicionar" method="post">
-                <div class="mb-3 col-9">
-                    <label asp-for="DataInicioUso" class="form-label">Data inicio uso</label>
-                    <input asp-for="DataInicioUso" type="text" class="form-control" id="DataInicioUso" aria-describedby="textHelp">
-                </div>
-                <div class="mb-3 col-9">
-                    <label asp-for="DataFimUso" class="form-label">Data Fim do uso</label>
-                    <input asp-for="DataFimUso" type="text" class="form-control" id="DataFimUso" aria-describedby="textHelp">
-                </div>
+             <form>
                 <div class="mb-3 col-9">
                     <label asp-for="Nome" class="form-label">Nome do Motorista</label>
                     <input asp-for="Nome" type="text" class="form-control" id="Nome" aria-describedby="textHelp">
@@ -56,10 +48,10 @@
                     <label asp-for="NumeroCnh" class="form-label">Nº CNH</label>
                     <input asp-for="NumeroCnh" type="number" class="form-control" id="NumeroCnh" aria-describedby="textHelp">
                 </div>
-                <div class="mb-3 col-9">
-                    <label asp-for="placa" class="form-label">Placa do veiculo</label>
-                    <input asp-for="placa" type="text" class="form-control" id="placa" aria-describedby="textHelp">
-                </div>
+                @* <div class="mb-3 col-9">
+                    <label asp-for="Placa" class="form-label">Placa do veiculo</label>
+                    <input asp-for="Placa" type="text" class="form-control" id="Placa" aria-describedby="textHelp">
+                </div> *@
 
                 <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;">Cadastrar</button>
                 <button type="submit" class="btn btn-info" style="margin: 2.8rem;">Listar</button>
