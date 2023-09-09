@@ -57,17 +57,18 @@ namespace MiniFrota.Models
         [Required(ErrorMessage = "Informe o nome da corretora de seguros.")]
         [Display(Name = "NomeCorretoraSeguros")]
         public string NomeCorretoraSeguros { get; set; }
-        public ICollection<Veiculo>Veiculos { get; set; }
+        //public ICollection<Veiculo>Veiculos { get; set; }
 
         
-        public void AdicionarCobertura(Veiculo veiculo)
-        {
-            Veiculos.Add(veiculo);
-        }
+        // public void AdicionarCobertura(Veiculo veiculo)
+        // {
+        //     Veiculos.Add(veiculo);
+        // }
 
-        public void RemoverCobertura(Veiculo veiculo)
-        {
-           Veiculos.Remove(veiculo);;
-        }
+        // public void RemoverCobertura(Veiculo veiculo)
+        // {
+        //    Veiculos.Remove(veiculo);;
+        // }
+        // acontecerá na v2.0
     }
 }

@@ -1,4 +1,4 @@
-﻿@model MiniFrota.Models.Veiculo;
+﻿@model MiniFrota.Models.Multa;
 @{
     ViewData["Title"] = "Veículo";
 }
@@ -39,7 +39,7 @@
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
                 <h1>Multa</h1>
-                <form>
+<form method="post">
   <div class="mb-3 col-9">
     <label for="exampleInputText1" class="form-label">Data da Multa</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
@@ -49,7 +49,7 @@
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">índice da infração</label>
+    <label for="exampleInputText1" class="form-label">índice da infração(gravidade ex. infração gravissima)</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">

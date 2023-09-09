@@ -25,7 +25,7 @@ namespace MiniFrota.Controllers
         }
 
         [HttpPost]
-        public IActionResult Adicionar(Veiculo veiculo)
+        public IActionResult Index(Veiculo veiculo)
         {
             if (ModelState.IsValid)
             {

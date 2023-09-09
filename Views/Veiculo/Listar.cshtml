@@ -15,9 +15,9 @@
       <th scope="col">
          @Html.DisplayNameFor(model => model.Placa)
       </th>
-      <th scope="col">
+      @* <th scope="col">
          @Html.DisplayNameFor(model => model.Motoristas)
-      </th>
+      </th> *@
     </tr>
   </thead>
   <tbody class="table table-success table-hover">
@@ -34,9 +34,9 @@
         <td>
            @Html.DisplayFor(model => item.Placa)
         </td>
-        <td>
+        @* <td>
            @Html.DisplayFor(model => item.Motoristas)
-        </td>
+        </td> *@
         <td>
           <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="veiculo.placa" >Alterar</button>
         </td>

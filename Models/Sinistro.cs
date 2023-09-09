@@ -18,6 +18,6 @@ namespace MiniFrota.Models
         [Display(Name = "DataHora")]
         public DateTime DataHora { get; set; }
 
-        public Seguro Seg { get; set; }
+        public string Seguro { get; set; }
     }
 }

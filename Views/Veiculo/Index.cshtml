@@ -39,29 +39,28 @@
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
                 <h1>Veículo</h1>
-<form >
+<form method="post">
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Modelo</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="Placa" class="form-label">Placa</label>
+    <input asp-for="Placa" type="text" class="form-control" id="Placa" aria-describedby="textHelp">
   </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Marca</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-  </div>
-  <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Placa</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+   <div class="mb-3 col-9">
+    <label asp-for="Cor" class="form-label">Cor</label>
+    <input asp-for="Cor" type="text" class="form-control" id="Cor" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Motorista</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="Marca" class="form-label">Marca</label>
+    <input asp-for="Marca" type="text" class="form-control" id="Marca" aria-describedby="textHelp">
   </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Veículo é particular?</label>
+  <div class="mb-3 col-9">
+    <label asp-for="Modelo"class="form-label">Modelo</label>
+    <input asp-for="Modelo" type="text" class="form-control" id="Modelo" aria-describedby="textHelp">
   </div>
-
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Adicionar">Cadastrar</button>
+  
+  
+    
+ 
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="veiculo" >Cadastrar</button> 
   <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" >Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="veiculo.placa" >Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="veiculo.placa" >Deletar</button>

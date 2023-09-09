@@ -29,12 +29,13 @@ namespace MiniFrota.Models
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         public DateTime DataMulta { get; set; }
 
-        [Required(ErrorMessage = "Informe o nome do motorista.")]
-        [Display(Name = "QualMotorista")]
-        public Motorista Mot { get; set; }
+        //[Required(ErrorMessage = "Informe o nome do motorista.")]
+       // [Display(Name = "QualMotorista")]
+       // public Motorista Mot { get; set; } talvez na v2.0
 
         [Required(ErrorMessage = "Informe a placa do veiculo.")]
         [Display(Name = "PlacVeiculo")]
-        public Veiculo Veic { get; set; }
+        public string Placa { get; set; }
+        //public Veiculo Veic { get; set; } futura implementação talvez na v2.0
     }
 }

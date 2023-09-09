@@ -28,9 +28,9 @@ namespace MiniFrota.Models
         [Display(Name = "Modelo")]
         public string Modelo { get; set; }
         
-        public Manutencao Manut { get; set; }
+        // public Manutencao Manut { get; set; }
 
-        public ICollection<Motorista> Motoristas { get; set; }
-        public ICollection<Multa> Multas { get; set; }
+        // public ICollection<Motorista> Motoristas { get; set; }
+        // public ICollection<Multa> Multas { get; set; }
     }
 }
