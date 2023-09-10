@@ -25,13 +25,14 @@ namespace MiniFrota.Controllers
         }
 
         [HttpPost]
-        public IActionResult Adicionar(Abastecer abastecer)
+        public IActionResult Index(Abastecer abastecer)
         {
             if (ModelState.IsValid)
             {
                 _context.Combustiveis.Add(abastecer);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                
+                return RedirectToAction(nameof(Index));
             }
 
             return View(abastecer);
@@ -39,8 +40,8 @@ namespace MiniFrota.Controllers
 
          public IActionResult Listar()
         {
-            var veiculos = _context.Combustiveis.ToList();
-            return View(veiculos);
+            var combustiveis = _context.Combustiveis.ToList();
+            return View(combustiveis);
         }
 
         public IActionResult Editar(int id)

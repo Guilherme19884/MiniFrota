@@ -1,6 +1,6 @@
 ﻿@model MiniFrota.Models.Multa;
 @{
-    ViewData["Title"] = "Veículo";
+    ViewData["Title"] = "Multa";
 }
 
     <div class="container-fluid">
@@ -61,7 +61,7 @@
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
 
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="CadastrarVeiculo">Cadastrar</button>
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Multa">Cadastrar</button>
   <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>

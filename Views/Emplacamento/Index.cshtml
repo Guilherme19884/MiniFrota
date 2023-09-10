@@ -39,7 +39,7 @@
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
                 <h1>Emplacamento</h1>
-                <form>
+                <form method="post">
   <div class="mb-3 col-9">
     <label for="exampleInputText1" class="form-label">Data do vencimento</label>
     <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
@@ -48,7 +48,7 @@
     <label for="exampleInputText1" class="form-label">Valor do emplacamento</label>
     <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
   </div>
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="CadastrarVeiculo">Cadastrar</button>
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Emplacamento">Cadastrar</button>
   <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>

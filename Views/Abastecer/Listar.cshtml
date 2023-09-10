@@ -1,0 +1,62 @@
+@model IEnumerable<MiniFrota.Models.Abastecer>;
+@{
+    ViewData["Title"] = "Lista de Veículos";
+}
+
+<table class="table table-success table-hover">
+  <thead>
+    @* Parte superior da lista, cabeçalho *@
+    <tr>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.DataAbastecimento)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.KmAtual)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.TipoCombustivel)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.PrecoCombustivel)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.QuantidadeLitros)
+      </th>
+      @* <th scope="col">
+         @Html.DisplayNameFor(model => model.Motoristas)
+      </th> *@
+    </tr>
+  </thead>
+  <tbody class="table table-success table-hover">
+
+    @foreach (var item in Model)
+    {
+      <tr>
+        <th scope="row">
+          @Html.DisplayFor(model => item.DataAbastecimento)
+        </th>
+        <td>
+          @Html.DisplayFor(model => item.KmAtual)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.TipoCombustivel)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.PrecoCombustivel)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.QuantidadeLitros)
+        </td>
+        @* <td>
+           @Html.DisplayFor(model => item.Motoristas)
+        </td> *@
+        <td>
+          <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="" >Alterar</button>
+        </td>
+        <td>
+          <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="" >Deletar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

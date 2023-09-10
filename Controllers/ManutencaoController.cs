@@ -22,13 +22,13 @@ namespace MiniFrota.Controllers
         public IActionResult Index() => View();
 
             [HttpPost]
-        public IActionResult Adicionar(Manutencao manutencao)
+        public IActionResult Index(Manutencao manutencao)
         {
             if (ModelState.IsValid)
             {
                 _context.Manutencoes.Add(manutencao);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
             
             return View(manutencao);
@@ -58,7 +58,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Manutencoes.Update(manutencao);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(manutencao);
@@ -75,7 +75,7 @@ namespace MiniFrota.Controllers
             _context.Manutencoes.Remove(manutencao);
             _context.SaveChanges();
 
-            return RedirectToAction("Listar");
+            return RedirectToAction(nameof(Index));
         }
     }
 }

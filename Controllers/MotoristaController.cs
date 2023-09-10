@@ -26,13 +26,12 @@ namespace MiniFrota.Controllers
         }
 
         [HttpPost]
-        public IActionResult Adicionar(Motorista motorista)
+        public IActionResult Index(Motorista motorista)
         {
             if (ModelState.IsValid)
             {
                 _context.Motoristas.Add(motorista);
                 _context.SaveChanges();
-                TempData["Mensagem"] ="MOTORISTA CADASTRADO COM SUCESSO";
                 return RedirectToAction(nameof(Index));
             }
             

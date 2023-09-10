@@ -12,17 +12,8 @@ namespace MiniFrota.Models
         [Key]
         public int AbastecerId { get; set; }
 
-        [Required(ErrorMessage = "Informe o Combustível que irá abastecer")]
-        [StringLength(50)]
-        [Display(Name = "Combustível")]
-        public string TipoCombustivel { get; set; }
-
-        [Required(ErrorMessage = "Informe o valor")]
-        [Display(Name = "Valor")]
-        public decimal ValorCombustivel { get; set; }
-
         [Required(ErrorMessage = "Informe a data do abastecimento")]
-        [Display(Name = "DataAbastecimeto")]
+        [Display(Name = "DataAbastecimento")]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Text)]
         public DateTime DataAbastecimento { get; set; }
@@ -31,23 +22,22 @@ namespace MiniFrota.Models
         [Display(Name = "KmAtual")]
         public long KmAtual { get; set; }
 
-        [Required(ErrorMessage = "Informe a KM abastecimento anterior")]
-        [Display(Name = "KmAnterior")]
-        public long KmAbastecimentoAnterior { get; set; }
+        [Required(ErrorMessage = "Informe o Combustível que irá abastecer")]
+        [StringLength(50)]
+        [Display(Name = "TipoCombustivel")]
+        public string TipoCombustivel { get; set; }
 
         [Required(ErrorMessage = "Informe o preço do combustivel")]
-        [Display(Name = "Preço")]
+        [Display(Name = "PrecoCombustivel")]
         [Column(TypeName ="decimal(10,2)")]
         [Range(1,999.99,ErrorMessage ="O preço deve estar entre 1 e 999,99")]
         public decimal PrecoCombustivel { get; set; }    
 
 
-        [Required(ErrorMessage = "Informe o valor total do abastecimento")]
-        [Display(Name = "Preço")]
+        [Required(ErrorMessage = "Informe a quantidade de litros")]
+        [Display(Name = "QuantidadeLitros")]
         [Column(TypeName ="decimal(10,2)")]
-        [Range(1,999.99,ErrorMessage ="O preço deve estar entre 1 e 999,99")]
-        public decimal ValorTotalAbastecimento { get; set; }
-
-        
+        public decimal QuantidadeLitros { get; set; }
+   
     }
 }

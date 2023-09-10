@@ -25,13 +25,13 @@ namespace MiniFrota.Controllers
         }
 
         [HttpPost]
-        public IActionResult Adicionar(Emplacamento emplacamento)
+        public IActionResult Index(Emplacamento emplacamento)
         {
             if (ModelState.IsValid)
             {
                 _context.Emplacamentos.Add(emplacamento);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
             
             return View(emplacamento);
@@ -59,7 +59,7 @@ namespace MiniFrota.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Veiculos.Update(emplacamento);
+                _context.Emplacamentos.Update(emplacamento);
                 _context.SaveChanges();
                 return RedirectToAction("Listar");
             }
@@ -75,7 +75,7 @@ namespace MiniFrota.Controllers
                 return NotFound();
             }
 
-            _context.Veiculos.Remove(emplacamento);
+            _context.Emplacamentos.Remove(emplacamento);
             _context.SaveChanges();
 
             return RedirectToAction("Listar");
