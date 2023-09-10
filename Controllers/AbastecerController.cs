@@ -62,7 +62,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Combustiveis.Update(abastecer);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(abastecer);
@@ -79,7 +79,7 @@ namespace MiniFrota.Controllers
             _context.Combustiveis.Remove(abastecimento);
             _context.SaveChanges();
 
-            return RedirectToAction("Listar");
+            return RedirectToAction(nameof(Index));
         }
 
     }

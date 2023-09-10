@@ -77,7 +77,7 @@ namespace MiniFrota.Controllers
             _context.Veiculos.Remove(veiculo);
             _context.SaveChanges();
 
-            return RedirectToAction("Listar");
+            return RedirectToAction(nameof(Index));
         }
     }
 }

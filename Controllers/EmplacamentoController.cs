@@ -61,7 +61,7 @@ namespace MiniFrota.Controllers
             {
                 _context.Emplacamentos.Update(emplacamento);
                 _context.SaveChanges();
-                return RedirectToAction("Listar");
+                return RedirectToAction(nameof(Index));
             }
 
             return View(emplacamento);
@@ -78,7 +78,7 @@ namespace MiniFrota.Controllers
             _context.Emplacamentos.Remove(emplacamento);
             _context.SaveChanges();
 
-            return RedirectToAction("Listar");
+            return RedirectToAction(nameof(Index));
         }
     }
 }
