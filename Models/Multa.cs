@@ -11,23 +11,30 @@ namespace MiniFrota.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Informe o valor da multa.")]
-        [Display(Name = "ValorMulta")]
-        public decimal Valor { get; set; }
-
-        [Required(ErrorMessage = "Informe a gravidade da infração cometida.")]
-        [Display(Name = "Gravidade")]
-        public string Gravidade { get; set; }
-
-        [Required(ErrorMessage = "Informe o local da nulta.")]
-        [Display(Name = "LocalDaMulta")]
-        public string Local { get; set; }
-
         [Required(ErrorMessage = "Informe a data da multa.")]
         [Display(Name = "DataMulta")]
         [DataType(DataType.Text)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         public DateTime DataMulta { get; set; }
+
+        [Required(ErrorMessage = "Informe o local da nulta.")]
+        [Display(Name = "LocalDaMulta")]
+        public string Local { get; set; }
+
+        [Required(ErrorMessage = "Informe a gravidade da infração cometida.")]
+        [Display(Name = "Gravidade")]
+        public string Gravidade { get; set; }
+
+        [Required(ErrorMessage = "Informe o valor da multa.")]
+        [Display(Name = "ValorMulta")]
+        public decimal Valor { get; set; }
+
+        [Required(ErrorMessage = "Informe a data da vencimento.")]
+        [Display(Name = "DataVencimento")]
+        [DataType(DataType.Text)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        public DateTime DataVencimento { get; set; }
+
 
         //[Required(ErrorMessage = "Informe o nome do motorista.")]
        // [Display(Name = "QualMotorista")]

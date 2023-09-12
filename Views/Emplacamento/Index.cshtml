@@ -1,4 +1,4 @@
-﻿@model MiniFrota.Models.Veiculo;
+﻿@model MiniFrota.Models.Emplacamento;
 @{
     ViewData["Title"] = "Emplacamento";
 }
@@ -39,14 +39,18 @@
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
                 <h1>Emplacamento</h1>
-                <form method="post">
+<form method="post">
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data do vencimento</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label aps-for="Placas" class="form-label">Placa do Veículo</label>
+    <input aps-for="Placas" type="Text" class="form-control" id="Placas" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Valor do emplacamento</label>
-    <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="DataVencimento" class="form-label">Data do vencimento</label>
+    <input asp-for="DataVencimento" type="Date" class="form-control" id="DataVencimento" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label asp-for="ValorEmplacamento" class="form-label">Valor do emplacamento</label>
+    <input asp-for="ValorEmplacamento" type="number" class="form-control" id="ValorEmplacamento" aria-describedby="textHelp">
   </div>
   <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Emplacamento">Cadastrar</button>
   <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
