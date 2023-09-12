@@ -18,6 +18,8 @@ namespace MiniFrota.Models
         [Display(Name = "DataHora")]
         public DateTime DataHora { get; set; }
 
+        [Required(ErrorMessage = "Informe a apolice do seguro")]
+        [Display(Name = "Seguro")]
         public string Seguro { get; set; }
     }
 }

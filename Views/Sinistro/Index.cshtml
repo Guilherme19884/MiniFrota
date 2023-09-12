@@ -41,12 +41,16 @@
                 <h1>Sinistro</h1>
 <form method="post">
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data do sinistro</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="DataHora" class="form-label">Data do sinistro</label>
+    <input asp-for="DataHora" type="date" class="form-control" id="DataHora" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Descricao</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="Descricao" class="form-label">Descricao</label>
+    <input asp-for="Descricao" type="text" class="form-control" id="Descricao" aria-describedby="textHelp">
+  </div>
+   <div class="mb-3 col-9">
+    <label asp-for="Seguro" class="form-label">Apolice do seguro</label>
+    <input asp-for="Seguro" type="text" class="form-control" id="Seguro" aria-describedby="textHelp">
   </div>
   
 
