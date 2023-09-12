@@ -18,7 +18,7 @@ namespace MiniFrota.Models
 
         [Required(ErrorMessage = "Informe a data do emplacamento")]
         [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{dd/MM/yyyy }", ApplyFormatInEditMode = true)]
         [DisplayName("DataVencimento")]
         public DateTime DataVencimento { get; set; }
 

@@ -1,6 +1,7 @@
-﻿@model MiniFrota.Models.Emplacamento;
+﻿@model MiniFrota.Models.Abastecer;
 @{
-    ViewData["Title"] = "Emplacamento";
+    ViewData["Title"] = "Abastecer";
+    bool cadastroComSucesso = ViewData["CadastroComSucesso"] as bool? ?? false;
 }
 
     <div class="container-fluid">
@@ -10,7 +11,7 @@
                 <h3 class="text-center mt-3" >Menu </h3>
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item">
-                        <a class="nav-link text-white"asp-controller="Veiculo" asp-action="Index">Veículo</a>
+                        <a class="nav-link text-white" asp-controller="Veiculo" asp-action="Index">Veículo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white"asp-controller="Multa" asp-action="Index">Multa</a>
@@ -19,7 +20,7 @@
                         <a class="nav-link text-white"asp-controller="Motorista" asp-action="Index">Motorista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Administrador</a>
+                        <a class="nav-link text-white"asp-controller="Administração" asp-action="Index">Administrador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" asp-controller="Abastecer" asp-action="Index">Abastecer</a>
@@ -31,29 +32,42 @@
                         <a class="nav-link text-white" asp-controller="Seguro" asp-action="Index">Seguro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Sinistro</a>
+                        <a class="nav-link text-white" asp-controller="Sinistro" asp-action="Index">Sinistro</a>
                     </li>
                 </ul>
         </div>
             
             <!-- Conteúdo Principal -->
             <div class="col-md-9">
-                <h1>Emplacamento</h1>
+                <h1>Abastecer</h1>
                 <form method="post">
   <div class="mb-3 col-9">
-    <label asp-for="Placas" class="form-label">Placa</label>
-    <input asp-for="Placas" type="text" class="form-control" id="Placas" aria-describedby="textHelp">
-  </div>                  
-  <div class="mb-3 col-9">
-    <label asp-for="DataVencimento" class="form-label">Data do vencimento</label>
-    <input asp-for="DataVencimento" type="text" class="form-control" id="DataVencimento" aria-describedby="textHelp">
+    <label asp-for="DataAbastecimento" class="form-label">Data do Abastecimento</label>
+    <input asp-for="DataAbastecimento" type="text" class="form-control" id="DataAbastecimento" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label asp-for="ValorEmplacamento" class="form-label">Valor do emplacamento</label>
-    <input asp-for="ValorEmplacamento" type="number" class="form-control" id="ValorEmplacamento" aria-describedby="textHelp">
+    <label asp-for="KmAtual" class="form-label">Km atual</label>
+    <input asp-for="KmAtual" type="text" class="form-control" id="KmAtual" aria-describedby="textHelp">
   </div>
-  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Abastecer">Cadastrar</button>
- <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" >Listar</button>
+  <div class="mb-3 col-9">
+    <label asp-for="TipoCombustivel" class="form-label">Tipo do combustível</label>
+    <input asp-for="TipoCombustivel" type="text" class="form-control" id="TipoCombustivel" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label asp-for="PrecoCombustivel"  class="form-label">Preço do combustível</label>
+    <input asp-for="PrecoCombustivel" type="text" class="form-control" id="PrecoCombustivel" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label asp-for="ValorAbastecimento"  class="form-label">Valor do abastecimento</label>
+    <input asp-for="ValorAbastecimento" type="text" class="form-control" id="ValorAbastecimento" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label asp-for="QuantidadeLitros" class="form-label">Quantidade de litros</label>
+    <input asp-for="QuantidadeLitros" type="text" class="form-control" id="QuantidadeLitros" aria-describedby="textHelp">
+  </div>
+
+  <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Abastecer" >Cadastrar</button>
+  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" >Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
 

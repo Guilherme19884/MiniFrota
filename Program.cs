@@ -1,3 +1,6 @@
+using System.Globalization;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using MiniFrota.Context;
 
@@ -10,6 +13,19 @@ var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
 var app = builder.Build();
+
+// Configuração da cultura para pt-BR
+var supportedCultures = new[]
+{
+    new CultureInfo("pt-BR"),
+};
+
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("pt-BR"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures,
+});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

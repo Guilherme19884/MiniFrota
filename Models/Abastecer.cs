@@ -29,9 +29,15 @@ namespace MiniFrota.Models
 
         [Required(ErrorMessage = "Informe o preço do combustivel")]
         [Display(Name = "PrecoCombustivel")]
-        [Column(TypeName ="decimal(10,2)")]
-        [Range(1,999.99,ErrorMessage ="O preço deve estar entre 1 e 999,99")]
+        //[Column(TypeName ="decimal(10,2)")]
+       
         public decimal PrecoCombustivel { get; set; }    
+
+        [Required(ErrorMessage = "Informe o preço do combustivel")]
+        [Display(Name = "ValorAbastecimento")]
+        [Column(TypeName ="decimal(10,2)")]
+       
+        public decimal ValorAbastecimento { get; set; }    
 
 
         [Required(ErrorMessage = "Informe a quantidade de litros")]

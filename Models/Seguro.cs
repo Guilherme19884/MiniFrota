@@ -30,25 +30,21 @@ namespace MiniFrota.Models
         public DateTime DataInicio { get; set; }
 
 
-        [Required(ErrorMessage = "Informe a gravidade da infração cometida.")]
+        [Required(ErrorMessage = "Informe a data do fim da vigência, para que você possa renovar.")]
         [Display(Name = "FimVigencia")]
         [DataType(DataType.Text)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         public DateTime FimVigencia { get; set; }
 
 
-        [Required(ErrorMessage = "Informe o valor da franquia.")]
+        [Required(ErrorMessage = "Informe se a franquia é normal ou reduzida.")]
         [Display(Name = "Franquia")]        
-        public string Franquia { get; set; } //Duvidas futuras aqui
+        public string Franquia { get; set; } 
 
         [Required(ErrorMessage = "Informe o valor da franquia.")]
         [Display(Name = "ValorFranquia")]
         [Column(TypeName ="decimal(10,2)")]
         public decimal ValorFranquia { get; set; }
-        
-        [Required(ErrorMessage = "Informe o CNPJ da seguradora (somente números).")]
-        [Display(Name = "CNPJ")]
-        public long CNPJ { get; set; }
 
         [Required(ErrorMessage = "Informe o nome da seguradora.")]
         [Display(Name = "NomeSeguradora")]

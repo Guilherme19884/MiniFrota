@@ -41,24 +41,36 @@
                 <h1>Seguro</h1>
 <form method="post">
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Número da apolice</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="NumeroApolice" class="form-label">Número da apolice</label>
+    <input asp-for="NumeroApolice" type="text" class="form-control" id="NumeroApolice" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Valor total do seguro</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="DataInicio" class="form-label"> Data de inicio da vigência </label>
+    <input asp-for="DataInicio" type="date" class="form-control" id="DataInicio" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Tipo do combustível</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="FimVigencia" class="form-label">Fim da vigência</label>
+    <input asp-for="FimVigencia" type="date" class="form-control" id="FimVigencia" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Valor</label>
-    <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="Franquia" class="form-label">Informe se a franquia é normal ou reduzida</label>
+    <input asp-for="Franquia" type="text" class="form-control" id="Franquia" aria-describedby="textHelp">
+  </div>
+   <div class="mb-3 col-9">
+    <label asp-for="NomeSeguradora" class="form-label">Nome da Seguradora</label>
+    <input asp-for="NomeSeguradora" type="text" class="form-control" id="NomeSeguradora" aria-describedby="textHelp">
+  </div>
+   <div class="mb-3 col-9">
+    <label asp-for="NomeCorretoraSeguros" class="form-label">Nome da Corretora de seguros</label>
+    <input asp-for="NomeCorretoraSeguros" type="text" class="form-control" id="NomeCorretoraSeguros" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Quantidade de litros</label>
-    <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="ValorFranquia" class="form-label">Valor da franquia</label>
+    <input asp-for="ValorFranquia" type="text" class="form-control" id="ValorFranquia" aria-describedby="textHelp">
+  </div>
+  <div class="mb-3 col-9">
+    <label asp-for="ValorSeguro" class="form-label">Valor total do seguro</label>
+    <input asp-for="ValorSeguro" type="text" class="form-control" id="ValorSeguro" aria-describedby="textHelp">
   </div>
 
   <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Seguro">Cadastrar</button>
