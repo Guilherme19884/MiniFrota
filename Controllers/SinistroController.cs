@@ -22,7 +22,7 @@ namespace MiniFrota.Controllers
         public IActionResult Index() => View();
 
         [HttpPost]
-        public IActionResult Listar(Sinistro sinistro)
+        public IActionResult Index(Sinistro sinistro)
         {
             if (ModelState.IsValid)
             {
