@@ -24125,6 +24125,11 @@
       "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Emplacamento\\Listar.cshtml",
+      "TargetPath": "Views\\Emplacamento\\Listar.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
