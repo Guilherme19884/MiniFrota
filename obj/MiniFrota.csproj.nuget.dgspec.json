@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {}
+    "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {}
   },
   "projects": {
-    "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {
+    "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
+        "projectUniqueName": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
         "projectName": "MiniFrota",
-        "projectPath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
+        "projectPath": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\MiniFrota.csproj",
         "packagesPath": "C:\\Users\\guiga\\.nuget\\packages\\",
-        "outputPath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\obj\\",
+        "outputPath": "D:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guiga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
