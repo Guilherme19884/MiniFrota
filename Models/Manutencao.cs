@@ -13,7 +13,7 @@ namespace MiniFrota.Models
         public int ManutencaoId { get; set; }
 
         [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "dd/MM/yyyy", ApplyFormatInEditMode = true)]
         [Display(Name = "DataManutencao")]
         public DateTime DataManutencao { get; set; }
 
@@ -22,7 +22,7 @@ namespace MiniFrota.Models
         public long KmDiaManutencao { get; set; }
 
         [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "dd/MM/yyyy", ApplyFormatInEditMode = true)]
         [Display(Name = "DataProximaManutencao")]
         public DateTime DataProximaManutencao { get; set; }
 

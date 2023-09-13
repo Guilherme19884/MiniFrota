@@ -52,8 +52,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNhb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Manutencao/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudXRlbmNhb1xMaXN0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Motorista/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3RhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Motorista/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW90b3Jpc3RhXExpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/MeusProjetos/Projeto-FrotaVeiculos/MiniFrota/Views/Multa/Index.cshtml]

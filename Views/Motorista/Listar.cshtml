@@ -1,0 +1,41 @@
+@model IEnumerable<MiniFrota.Models.Motorista>;
+@{
+    ViewData["Title"] = "Lista de Abastecimento";
+}
+
+<table class="table table-success table-hover">
+  <thead>
+    @* Parte superior da lista, cabeçalho *@
+    <tr>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.NumeroCnh)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.Salario)
+      </th>
+      @* <th scope="col">
+         @Html.DisplayNameFor(model => model.Motoristas)
+      </th> *@
+    </tr>
+  </thead>
+  <tbody class="table table-success table-hover">
+
+    @foreach (var item in Model)
+    {
+      <tr>
+        <th scope="row">
+          @Html.DisplayFor(model => item.NumeroCnh)
+        </th>
+        <td>
+          @Html.DisplayFor(model => item.Salario)
+        </td>
+        <td>
+          <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="" >Alterar</button>
+        </td>
+        <td>
+          <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="" >Deletar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

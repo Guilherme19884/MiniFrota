@@ -24130,6 +24130,16 @@
       "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Emplacamento\\Listar.cshtml",
       "TargetPath": "Views\\Emplacamento\\Listar.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Manutencao\\Listar.cshtml",
+      "TargetPath": "Views\\Manutencao\\Listar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Motorista\\Listar.cshtml",
+      "TargetPath": "Views\\Motorista\\Listar.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

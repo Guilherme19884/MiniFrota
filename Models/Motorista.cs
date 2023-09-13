@@ -12,7 +12,7 @@ namespace MiniFrota.Models
         public int MotoristaId { get; set; }
 
         [Required(ErrorMessage = "Informe sua CNH.")]
-        [Display(Name = "CNH")]
+        [Display(Name = "NumeroCnh")]
         public long NumeroCnh { get; set; }
 
         [Required(ErrorMessage = "Informe o salário do Motorista.")]
