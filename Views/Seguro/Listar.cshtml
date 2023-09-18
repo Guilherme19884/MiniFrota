@@ -1,0 +1,80 @@
+@model IEnumerable<MiniFrota.Models.Seguro>;
+@{
+    ViewData["Title"] = "Lista de Seguros";
+}
+
+<table class="table table-success table-hover">
+  <thead>
+    @* Parte superior da lista, cabeçalho *@
+    <tr>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.NumeroApolice)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.ValorSeguro)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.DataInicio)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.FimVigencia)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.Franquia)
+      </th>
+      <th scope="col">
+         @Html.DisplayNameFor(model => model.ValorFranquia)
+      </th>
+            <th scope="col">
+         @Html.DisplayNameFor(model => model.NomeSeguradora)
+      </th>
+            <th scope="col">
+         @Html.DisplayNameFor(model => model.NomeCorretoraSeguros)
+      </th>
+          @* <th scope="col">
+         @Html.DisplayNameFor(model => model.Motoristas)
+      </th> *@
+    </tr>
+  </thead>
+  <tbody class="table table-success table-hover">
+
+    @foreach (var item in Model)
+    {
+      <tr>
+        <th scope="row">
+          @Html.DisplayFor(model => item.NumeroApolice)
+        </th>
+        <td>
+          @Html.DisplayFor(model => item.ValorSeguro)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.DataInicio)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.FimVigencia)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.Franquia)
+        </td>
+        <td>
+           @Html.DisplayFor(model => item.ValorFranquia)
+        </td>
+         <td>
+           @Html.DisplayFor(model => item.NomeSeguradora)
+        </td>
+         <td>
+           @Html.DisplayFor(model => item.NomeCorretoraSeguros)
+        </td>
+        @* <td>
+           @Html.DisplayFor(model => item.Motoristas)
+        </td> *@
+        <td>
+          <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="" >Alterar</button>
+        </td>
+        <td>
+          <button type="submit" class="btn btn-danger" style="margin: 2.8rem;" asp-action="Excluir" asp-route-id="" >Deletar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
