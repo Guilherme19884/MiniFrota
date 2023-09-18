@@ -42,7 +42,7 @@ namespace MiniFrota.Models
 
         [Required(ErrorMessage = "Informe a placa do veiculo.")]
         [Display(Name = "PlacVeiculo")]
-        public string Placa { get; set; }
+        public string PlacVeiculo { get; set; }
         //public Veiculo Veic { get; set; } futura implementação talvez na v2.0
     }
 }

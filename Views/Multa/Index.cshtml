@@ -44,32 +44,32 @@
                 <h1>Multa</h1>
 <form method="post">
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data da Multa</label>
-    <input type="Date" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="DataMulta" class="form-label">Data da Multa</label>
+    <input asp-for="DataMulta" type="Date" class="form-control" id="DataMulta" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Local</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="LocalMulta" class="form-label">Local</label>
+    <input asp-for="LocalMulta" type="text" class="form-control" id="LocalMulta" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">índice da infração(gravidade ex. infração gravissima)</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="Gravidade" class="form-label">índice da infração(gravidade ex. infração gravissima)</label>
+    <input asp-for="Gravidade" type="text" class="form-control" id="Gravidade" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">valor</label>
-    <input type="number" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="ValorMulta" class="form-label">valor</label>
+    <input asp-type="text" class="form-control" id="ValorMulta" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Data de vencimento</label>
-    <input type="Date" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="DataVencimento" class="form-label">Data de vencimento</label>
+    <input asp-for="DataVencimento" type="Date" class="form-control" id="DataVencimento" aria-describedby="textHelp">
   </div>
     <div class="mb-3 col-9">
-    <label for="exampleInputText1" class="form-label">Placa do Veiculo</label>
-    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+    <label asp-for="PlacVeiculo" class="form-label">Placa do Veiculo</label>
+    <input asp-for="PlacVeiculo" type="text" class="form-control" id="PlacVeiculo" aria-describedby="textHelp">
   </div>
 
   <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Multa">Cadastrar</button>
-  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" >Listar</button>
+  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" asp-controller="Multa">Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
 
