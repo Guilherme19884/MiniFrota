@@ -18,8 +18,8 @@ namespace MiniFrota.Models
         public DateTime DataMulta { get; set; }
 
         [Required(ErrorMessage = "Informe o local da nulta.")]
-        [Display(Name = "LocalDaMulta")]
-        public string Local { get; set; }
+        [Display(Name = "LocalMulta")]
+        public string LocalMulta { get; set; }
 
         [Required(ErrorMessage = "Informe a gravidade da infração cometida.")]
         [Display(Name = "Gravidade")]
@@ -27,7 +27,7 @@ namespace MiniFrota.Models
 
         [Required(ErrorMessage = "Informe o valor da multa.")]
         [Display(Name = "ValorMulta")]
-        public decimal Valor { get; set; }
+        public decimal ValorMulta { get; set; }
 
         [Required(ErrorMessage = "Informe a data da vencimento.")]
         [Display(Name = "DataVencimento")]

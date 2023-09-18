@@ -1,4 +1,4 @@
-@model IEnumerable<MiniFrota.Models.Motorista>;
+@model IEnumerable<MiniFrota.Models.Multa>;
 @{
     ViewData["Title"] = "Lista de Abastecimento";
 }
@@ -8,13 +8,19 @@
     @* Parte superior da lista, cabeçalho *@
     <tr>
       <th scope="col">
-        @Html.DisplayNameFor(model => model.NumeroCnh)
+        @Html.DisplayNameFor(model => model.DataMulta)
       </th>
       <th scope="col">
-        @Html.DisplayNameFor(model => model.Nome)
+        @Html.DisplayNameFor(model => model.LocalMulta)
       </th>
       <th scope="col">
-        @Html.DisplayNameFor(model => model.Salario)
+        @Html.DisplayNameFor(model => model.Gravidade)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.ValorMulta)
+      </th>
+      <th scope="col">
+        @Html.DisplayNameFor(model => model.DataVencimento)
       </th>
       @* <th scope="col">
          @Html.DisplayNameFor(model => model.Motoristas)
@@ -27,13 +33,19 @@
     {
       <tr>
         <th scope="row">
-          @Html.DisplayFor(model => item.NumeroCnh)
+          @Html.DisplayFor(model => item.DataMulta)
         </th>
         <td>
-          @Html.DisplayFor(model => item.Salario)
+          @Html.DisplayFor(model => item.LocalMulta)
         </td>
         <td>
-          @Html.DisplayFor(model => item.Nome)
+          @Html.DisplayFor(model => item.Gravidade)
+        </td>
+         <td>
+          @Html.DisplayFor(model => item.ValorMulta)
+        </td>
+         <td>
+          @Html.DisplayFor(model => item.DataVencimento)
         </td>
         <td>
           <button type="submit" class="btn btn-warning" style="margin: 2.8rem;" asp-action="Editar" asp-route-id="" >Alterar</button>

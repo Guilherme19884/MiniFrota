@@ -11,6 +11,10 @@ namespace MiniFrota.Models
         [Key]
         public int MotoristaId { get; set; }
 
+        [Required(ErrorMessage = "Informe o nome do Motorista.")]
+        [Display(Name = "Nome")]
+        public int Nome{ get; set; }
+
         [Required(ErrorMessage = "Informe sua CNH.")]
         [Display(Name = "NumeroCnh")]
         public long NumeroCnh { get; set; }
