@@ -45,19 +45,20 @@
 <form method="post">
   <div class="mb-3 col-9">
     <label asp-for="DataHora" class="form-label">Data do sinistro</label>
-    <input asp-for="DataHora" type="date" class="form-control" id="DataHora" aria-describedby="textHelp">
+    <input asp-for="DataHora" type="text" class="form-control" id="DataHora" aria-describedby="textHelp">
   </div>
   <div class="mb-3 col-9">
     <label asp-for="Descricao" class="form-label">Descricao</label>
     <input asp-for="Descricao" type="text" class="form-control" id="Descricao" aria-describedby="textHelp">
   </div>
    <div class="mb-3 col-9">
-    <label asp-for="Seguro" class="form-label">Apolice do seguro</label>
-    <input asp-for="Seguro" type="text" class="form-control" id="Seguro" aria-describedby="textHelp">
+    <label asp-for="ApoliceSeguroSeguro" class="form-label">Apolice do seguro</label>
+    <input asp-for="ApoliceSeguroSeguro" type="text" class="form-control" id="ApoliceSeguroSeguro" aria-describedby="textHelp">
   </div>
   
 
   <button type="submit" class="btn btn-success" style="margin-right: 2.8rem;" asp-action="Index" value="Index" asp-controller="Sinistro">Cadastrar</button>
+  <button type="submit" class="btn btn-info" style="margin: 2.8rem;" asp-action="Listar" value="Listar" asp-controller="Sinistro">Listar</button>
   <button type="submit" class="btn btn-warning" style="margin: 2.8rem;">Alterar</button>
   <button type="submit" class="btn btn-danger" style="margin: 2.8rem;">Deletar</button>
 

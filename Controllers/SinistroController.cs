@@ -36,19 +36,19 @@ namespace MiniFrota.Controllers
 
         public IActionResult Listar()
         {
-            var seguros = _context.Seguros.ToList();
-            return View(seguros);
+            var sinistro = _context.Sinistros.ToList();
+            return View(sinistro);
         }
 
         public IActionResult Editar(int id)
         {
-            var seguro = _context.Seguros.Find(id);
-            if (seguro == null)
+            var sinistro = _context.Sinistros.Find(id);
+            if (sinistro == null)
             {
                 return NotFound();
             }
 
-            return View(seguro);
+            return View(sinistro);
         }
 
         [HttpPost]

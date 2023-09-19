@@ -24150,6 +24150,11 @@
       "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Seguro\\Listar.cshtml",
       "TargetPath": "Views\\Seguro\\Listar.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MeusProjetos\\Projeto-FrotaVeiculos\\MiniFrota\\Views\\Sinistro\\Listar.cshtml",
+      "TargetPath": "Views\\Sinistro\\Listar.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

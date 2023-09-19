@@ -19,7 +19,7 @@ namespace MiniFrota.Models
         public DateTime DataHora { get; set; }
 
         [Required(ErrorMessage = "Informe a apolice do seguro")]
-        [Display(Name = "Seguro")]
-        public string Seguro { get; set; }
+        [Display(Name = "ApoliceSeguro")]
+        public string ApoliceSeguroSeguro { get; set; }
     }
 }
