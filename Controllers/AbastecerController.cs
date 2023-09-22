@@ -40,19 +40,19 @@ namespace MiniFrota.Controllers
 
          public IActionResult Listar()
         {
-            var combustiveis = _context.Combustiveis.ToList();
-            return View(combustiveis);
+            var abastecer = _context.Combustiveis.ToList();
+            return View(abastecer);
         }
 
-        public IActionResult Editar(int id)
+        public IActionResult EditarPorId(int id)
         {
-            var veiculo = _context.Combustiveis.Find(id);
-            if (veiculo == null)
+            var abastecer = _context.Combustiveis.Find(id);
+            if (abastecer == null)
             {
                 return NotFound();
             }
 
-            return View(veiculo);
+            return View(abastecer);
         }
 
         [HttpPost]

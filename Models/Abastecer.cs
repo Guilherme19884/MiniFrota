@@ -14,7 +14,7 @@ namespace MiniFrota.Models
 
         [Required(ErrorMessage = "Informe a data do abastecimento")]
         [Display(Name = "DataAbastecimento")]
-        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy }", ApplyFormatInEditMode = true)]
         [DataType(DataType.Text)]
         public DateTime DataAbastecimento { get; set; }
 

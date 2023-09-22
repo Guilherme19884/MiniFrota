@@ -7,6 +7,9 @@
   <thead>
     @* Parte superior da lista, cabeçalho *@
     <tr>
+       <th scope="col">
+        @Html.DisplayNameFor(model => model.AbastecerId)
+      </th>
       <th scope="col">
         @Html.DisplayNameFor(model => model.DataAbastecimento)
       </th>
@@ -32,29 +35,32 @@
     @foreach (var item in Model)
     {
       <tr>
+         <th scope="row">
+          @Html.DisplayFor(model => item.AbastecerId)
+        </th>
         <th scope="row">
           @Html.DisplayFor(model => item.DataAbastecimento)
         </th>
-        <td>
+        <td scope="row">
           @Html.DisplayFor(model => item.KmAtual)
         </td>
-        <td>
+        <td scope="row">
            @Html.DisplayFor(model => item.TipoCombustivel)
         </td>
-        <td>
+        <td scope="row">
            @Html.DisplayFor(model => item.PrecoCombustivel)
         </td>
-        <td>
+        <td scope="row">
            @Html.DisplayFor(model => item.QuantidadeLitros)
         </td>
         @* <td>
            @Html.DisplayFor(model => item.Motoristas)
         </td> *@
         <td>
-          <button type="submit" class="btn btn-warning"  asp-action="Editar" value="Editar" asp-controller="Abastecer" >Alterar</button>
+          <a type="submit" class="btn btn-warning" asp-action="Editar"  asp-route-id="@item.AbastecerId">Alterar</a>
         </td>
         <td>
-          <button type="submit" class="btn btn-danger"  asp-action="Excluir" asp-route-id="" >Deletar</button>
+          <a type="submit" class="btn btn-danger"  asp-action="Excluir" value="Excluir" asp-route-id="@item.AbastecerId" >Deletar</a>
         </td>
       </tr>
     }
