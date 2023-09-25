@@ -40,7 +40,7 @@ namespace MiniFrota.Controllers
             return View(multas);
         }
 
-        public IActionResult Editar(int id)
+        public IActionResult EditarPorId(int id)
         {
             var multa = _context.Multas.Find(id);
             if (multa == null)

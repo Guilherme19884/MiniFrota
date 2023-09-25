@@ -14,7 +14,7 @@ namespace MiniFrota.Models
         [Required(ErrorMessage = "Informe a data da multa.")]
         [Display(Name = "DataMulta")]
         [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "dd/MM/yyyy", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy }", ApplyFormatInEditMode = true)]
         public DateTime DataMulta { get; set; }
 
         [Required(ErrorMessage = "Informe o local da nulta.")]
@@ -32,7 +32,7 @@ namespace MiniFrota.Models
         [Required(ErrorMessage = "Informe a data da vencimento.")]
         [Display(Name = "DataVencimento")]
         [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataVencimento { get; set; }
 
 

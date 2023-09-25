@@ -44,9 +44,9 @@ namespace MiniFrota.Controllers
             return View(abastecer);
         }
 
-        public IActionResult EditarPorId(int id)
+        public IActionResult EditarPorId(int AbastecerId)
         {
-            var abastecer = _context.Combustiveis.Find(id);
+            var abastecer = _context.Combustiveis.Find(AbastecerId);
             if (abastecer == null)
             {
                 return NotFound();

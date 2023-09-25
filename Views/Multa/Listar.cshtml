@@ -7,6 +7,9 @@
   <thead>
     @* Parte superior da lista, cabeçalho *@
     <tr>
+       <th scope="col">
+        @Html.DisplayNameFor(model => model.Id)
+      </th>
       <th scope="col">
         @Html.DisplayNameFor(model => model.DataMulta)
       </th>
@@ -33,6 +36,9 @@
     {
       <tr>
         <th scope="row">
+          @Html.DisplayFor(model => item.Id)
+        </th>
+        <th scope="row">
           @Html.DisplayFor(model => item.DataMulta)
         </th>
         <td>
@@ -48,10 +54,10 @@
           @Html.DisplayFor(model => item.DataVencimento)
         </td>
         <td>
-          <button type="submit" class="btn btn-warning"  asp-action="Editar" asp-route-id="" >Alterar</button>
+          <button type="submit" class="btn btn-warning"   asp-action="Editar" asp-route-id="@item.Id" asp-controller="Multa" >Alterar</button>
         </td>
         <td>
-          <button type="submit" class="btn btn-danger"  asp-action="Excluir" asp-route-id="" >Deletar</button>
+          <a type="submit" class="btn btn-danger"   asp-action="Excluir" asp-route-id="@item.Id" asp-controller="Multa" >Deletar</a>
         </td>
       </tr>
     }

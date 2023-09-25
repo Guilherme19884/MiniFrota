@@ -38,10 +38,10 @@
            @Html.DisplayFor(model => item.Motoristas)
         </td> *@
         <td>
-          <button type="submit" class="btn btn-warning" asp-action="Editar" asp-route-id="veiculo.placa" >Alterar</button>
+          <a type="submit" class="btn btn-warning" asp-action="Editar" asp-route-id="@item.Placa" asp-controller="Veiculo" >Alterar</a>
         </td>
         <td>
-          <button type="submit" class="btn btn-danger" asp-action="Excluir" asp-route-id="veiculo.placa" >Deletar</button>
+          <a type="submit" class="btn btn-danger" asp-action="Editar" asp-route-id="@item.Placa" asp-controller="Veiculo" >Deletar</a>
         </td>
       </tr>
     }

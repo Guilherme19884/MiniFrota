@@ -8,6 +8,9 @@
     @* Parte superior da lista, cabeçalho *@
     <tr>
       <th scope="col">
+        @Html.DisplayNameFor(model => model.MotoristaId)
+      </th>
+      <th scope="col">
         @Html.DisplayNameFor(model => model.NumeroCnh)
       </th>
       <th scope="col">
@@ -27,6 +30,9 @@
     {
       <tr>
         <th scope="row">
+          @Html.DisplayFor(model => item.MotoristaId)
+        </th>
+        <th scope="row">
           @Html.DisplayFor(model => item.NumeroCnh)
         </th>
         <td>
@@ -36,10 +42,10 @@
           @Html.DisplayFor(model => item.Nome)
         </td>
         <td>
-          <button type="submit" class="btn btn-warning"  asp-action="Editar" asp-route-id="" >Alterar</button>
+          <a type="submit" class="btn btn-warning"   asp-action="Editar" asp-route-id="@item.MotoristaId" asp-controller="Motorista" >Alterar</a>
         </td>
         <td>
-          <button type="submit" class="btn btn-danger"  asp-action="Excluir" asp-route-id="" >Deletar</button>
+          <a type="submit" class="btn btn-danger"   asp-action="Excluir"  asp-route-id="@item.MotoristaId" asp-controller="Motorista" >Deletar</a>
         </td>
       </tr>
     }
